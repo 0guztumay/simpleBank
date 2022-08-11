@@ -20,5 +20,12 @@ contract simpleBank{
        address payable to= payable(msg.sender);
        to.transfer(getBalance());
    }
-   
+   uint sayi1;
+   uint sayi2;
+   uint sonuc;
+   function islem(uint _sayi1,uint _sayi2)public{
+    sayi1=_sayi1;
+    sayi2=_sayi2;
+    sonuc=sayi1+sayi2;
+   }
 }
