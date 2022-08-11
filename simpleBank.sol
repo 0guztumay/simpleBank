@@ -18,5 +18,7 @@ contract simpleBank{
    //Refund
    function refund()public{
        address payable to= payable(msg.sender);
+       to.transfer(getBalance());
    }
+   
 }
