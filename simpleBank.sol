@@ -3,8 +3,7 @@ pragma solidity ^0.8.7;
 
 contract simpleBank{
     //Get Money
-    function getMoney()public payable{
-    }
+    function getMoney()public payable{}
     //Show Account Balance
     function getBalance()public view returns(uint){
         return address(this).balance;
