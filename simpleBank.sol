@@ -15,9 +15,4 @@ contract simpleBank{
         require(_amount*x18 < address(this).balance, "You don't have enough money");
         _address.transfer(_amount*x18);
    }
-   //Refund
-   function refund()public{
-       address payable to= payable(msg.sender);
-       to.transfer(getBalance());
-   }
 }
